@@ -1,19 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import SettingsTitle from './components/settingstitle';
 
 export default function App() {
-  return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <SettingsTitle></SettingsTitle>
     </View>
-  );
 
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#d8e2f5',
+    backgroundColor: '#d7e2f4',
     alignItems: 'center',
     justifyContent: 'center',
   },
