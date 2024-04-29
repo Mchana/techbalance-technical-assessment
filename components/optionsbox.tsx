@@ -1,10 +1,15 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
 
-export default function Logout () {
+export default function OptionsBox () {
     return(
     <View style= {styles.container}>
-        <Text style={{ color: '#000000', textAlign: 'center', textAlignVertical: 'center', }}>Logout</Text>
+        <Text style={styles.text}>Account</Text>
+        <Text style={styles.text}>Notifications</Text>
+        <Text style={styles.text}>Help & Support</Text>
+        <Text style={styles.text}>Privacy Policy</Text>
+        <Text style={styles.text}>Terms & Conditions</Text>
+
     </View>
     )
 }
@@ -19,7 +24,10 @@ const styles = StyleSheet.create({
     opacity:{
         backgroundColor: '#f0f2ff',
         width:300,
-        height: 50,
+        height: 30,
         borderRadius: 50,
+    },
+    text:{
+        color: '#000000',
     }
 });

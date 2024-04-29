@@ -3,13 +3,16 @@ import { StyleSheet, View} from 'react-native';
 import SettingsTitle from './components/settingstitle';
 import Lefticon from './components/lefticon';
 import Logout from './components/logout';
+import OptionsBox from './components/optionsbox';
 
 export default function App() {
   return(
     <View style={styles.container}>
       <SettingsTitle></SettingsTitle>
       <Lefticon ></Lefticon>
+      <OptionsBox></OptionsBox>
       <Logout></Logout>
+
     </View>
   );
 }
