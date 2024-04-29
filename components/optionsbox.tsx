@@ -5,16 +5,30 @@ import { Text, StyleSheet, View } from "react-native";
 export default function OptionsBox () {
     return(
     <View style= {styles.container}>
-        <Text style={styles.text}>Account<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        <View>
+        <Text style={styles.text}>Account
+        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        </View>
         
+        <View>
+        <Text style={styles.text}>Notifications
+        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        </View>
+        
+        <View>
+        <Text style={styles.text}>Help & Support
+        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        </View>
+        
+        <View>
+        <Text style={styles.text}>Privacy Policy
+        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        </View>
 
-        <Text style={styles.text}>Notifications<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
-
-        <Text style={styles.text}>Help & Support<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
-        
-        <Text style={styles.text}>Privacy Policy<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
-        
-        <Text style={styles.text}>Terms & Conditions<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        <View>
+        <Text style={styles.text}>Terms & Conditions
+        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        </View>
 
     </View>
     )
@@ -22,34 +36,26 @@ export default function OptionsBox () {
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        flexShrink: 1,
+        flexGrow: 1,
+        flexDirection:'column',
         backgroundColor: '#ffffff',
         borderRadius: 50,
         width: 350,
-        height:400,
-    },
-    opacity:{
-        backgroundColor: '#f0f2ff',
-        width:300,
-        height: 30,
-        borderRadius: 50,
+        height:200,
     },
     text:{
-        flex: 0.8,
-        flexDirection: 'row',
+        flexGrow:1,
+        flexShrink:1,
+        paddingLeft:8,
+        alignItems: 'center',
         color: '#000000',
         lineHeight: 32,
-        paddingVertical:6,
-        flexWrap:'wrap',
+        padding:'auto',
 
     },
     icon:{
-        display:'flex',
-        alignItems:'flex-start',
+        flexDirection:'row',
+        marginRight: 50,
     },
 
 });
