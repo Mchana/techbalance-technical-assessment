@@ -1,12 +1,17 @@
-import React from 'react';
+import * as React from 'react';
 import { StyleSheet, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SettingsTitle from './components/settingstitle';
 import Lefticon from './components/lefticon';
 import Logout from './components/logout';
 import OptionsBox from './components/optionsbox';
 
+//const Stack = createNativeStackNavigator();
+
 export default function App() {
   return(
+    <NavigationContainer>
     <View style={styles.container}>
       <SettingsTitle></SettingsTitle>
       <Lefticon ></Lefticon>
@@ -14,6 +19,7 @@ export default function App() {
       <Logout></Logout>
 
     </View>
+    </NavigationContainer>
   );
 }
 
