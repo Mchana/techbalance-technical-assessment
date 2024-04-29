@@ -7,7 +7,7 @@ export default function App() {
   return(
     <View style={styles.container}>
       <SettingsTitle></SettingsTitle>
-      <Lefticon></Lefticon>
+      <Lefticon ></Lefticon>
     </View>
   );
 }
@@ -19,12 +19,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  icon: {
-    flex:1,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    paddingHorizontal: 20,
-    paddingVertical: 20,
 
-  }
 });

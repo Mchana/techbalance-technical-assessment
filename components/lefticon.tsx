@@ -1,21 +1,23 @@
 import React from "react";
 import AntDesign from "@expo/vector-icons/build/AntDesign";
-import { Text, StyleSheet, View } from "react-native";
+import {StyleSheet, View } from "react-native";
 
 export default function Lefticon () {
     return (
-        <View style= {styles.icon}>
-        <AntDesign name="arrowleft" size={24} color="black"/>
+        <View style= {styles.container}>
+        <AntDesign style= {[styles.icon]} name="arrowleft" size={24} color="black"/>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    icon: {
-        flex:1,
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        paddingHorizontal: 20,
-        paddingVertical: 20,
+    container: {
+        position: 'absolute',
+        top:0,
+        left:0,
     },
+    icon:{
+        marginTop: 10,
+        marginLeft: 10,
+    }
 });

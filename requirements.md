@@ -1,4 +1,4 @@
-status bar at top dun
+status bar at top
 
 top left button component with arrow going left
 
