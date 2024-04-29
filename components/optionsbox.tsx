@@ -37,25 +37,27 @@ export default function OptionsBox () {
 const styles = StyleSheet.create({
     container:{
         flexGrow: 1,
+        flexShrink:1,
         flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'space-evenly',
         backgroundColor: '#ffffff',
         borderRadius: 50,
-        width: 350,
+        width: '90%',
         height:200,
     },
     text:{
-        flexGrow:1,
-        flexShrink:1,
-        paddingLeft:8,
-        alignItems: 'center',
+        //paddingLeft:10,
+        flexDirection:'row',
+        justifyContent:'flex-start',
         color: '#000000',
         lineHeight: 32,
-        padding:'auto',
 
     },
     icon:{
-        flexDirection:'row',
-        marginRight: 50,
+        //flexDirection:'row',
+        //marginRight: 50,
+        justifyContent:'flex-end'
     },
 
 });
