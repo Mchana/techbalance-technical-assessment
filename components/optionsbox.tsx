@@ -1,13 +1,11 @@
 import React from "react";
-import { Text, StyleSheet, SafeAreaView, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
 export default function Logout () {
     return(
-    <SafeAreaView style= {styles.container}>
-        <TouchableOpacity style= {styles.opacity}>
+    <View style= {styles.container}>
         <Text style={{ color: '#000000', textAlign: 'center', textAlignVertical: 'center', }}>Logout</Text>
-        </TouchableOpacity>
-    </SafeAreaView>
+    </View>
     )
 }
 
