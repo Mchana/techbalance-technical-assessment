@@ -5,16 +5,16 @@ import { Text, StyleSheet, View } from "react-native";
 export default function OptionsBox () {
     return(
     <View style= {styles.container}>
-        <Text style={styles.text}>Account</Text>
-        <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/>
-
-        <Text style={styles.text}>Notifications</Text>
-
-        <Text style={styles.text}>Help & Support</Text>
+        <Text style={styles.text}>Account<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
         
-        <Text style={styles.text}>Privacy Policy</Text>
+
+        <Text style={styles.text}>Notifications<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+
+        <Text style={styles.text}>Help & Support<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
         
-        <Text style={styles.text}>Terms & Conditions</Text>
+        <Text style={styles.text}>Privacy Policy<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
+        
+        <Text style={styles.text}>Terms & Conditions<AntDesign style= {[styles.icon]} name="right" size={24} color="black"/></Text>
 
     </View>
     )
@@ -49,5 +49,7 @@ const styles = StyleSheet.create({
     },
     icon:{
         display:'flex',
-    }
+        alignItems:'flex-start',
+    },
+
 });
