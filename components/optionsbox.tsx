@@ -7,9 +7,13 @@ export default function OptionsBox () {
     <View style= {styles.container}>
         <Text style={styles.text}>Account</Text>
         <AntDesign style= {[styles.icon]} name="right" size={24} color="black"/>
+
         <Text style={styles.text}>Notifications</Text>
+
         <Text style={styles.text}>Help & Support</Text>
+        
         <Text style={styles.text}>Privacy Policy</Text>
+        
         <Text style={styles.text}>Terms & Conditions</Text>
 
     </View>
