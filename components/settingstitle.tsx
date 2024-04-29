@@ -1,5 +1,4 @@
 import React from "react";
-import AntDesign from "@expo/vector-icons/build/AntDesign";
 import { Text, StyleSheet, View } from "react-native";
 
 export default function SettingsTitle () {
