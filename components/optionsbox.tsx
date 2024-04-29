@@ -20,6 +20,10 @@ const styles = StyleSheet.create({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#ffffff',
+        borderRadius: 50,
+        width: 300,
+        height:400,
     },
     opacity:{
         backgroundColor: '#f0f2ff',
@@ -29,5 +33,7 @@ const styles = StyleSheet.create({
     },
     text:{
         color: '#000000',
+        lineHeight: 32,
+        paddingVertical:6,
     }
 });
