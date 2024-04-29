@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View} from 'react-native';
+import SettingsTitle from './components/settingstitle';
+import Lefticon from './components/lefticon';
+import Logout from './components/logout';
+import OptionsBox from './components/optionsbox';
 
 export default function App() {
-  return (
+  return(
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SettingsTitle></SettingsTitle>
+      <Lefticon ></Lefticon>
+      <OptionsBox></OptionsBox>
+      <Logout></Logout>
+
     </View>
   );
 }
@@ -13,8 +20,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#d7e2f4',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });

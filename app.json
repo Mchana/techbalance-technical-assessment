@@ -1,7 +1,12 @@
 {
   "expo": {
+<<<<<<< HEAD
+    "name": "react-native-learning",
+    "slug": "react-native-learning",
+=======
     "name": "techbalance-technical-assessment",
     "slug": "techbalance-technical-assessment",
+>>>>>>> main
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
