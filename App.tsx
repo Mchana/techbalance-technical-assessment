@@ -1,11 +1,15 @@
+import React from 'react';
 import { StyleSheet, View} from 'react-native';
 import SettingsTitle from './components/settingstitle';
+import Lefticon from './components/lefticon';
 
 export default function App() {
+  return(
     <View style={styles.container}>
       <SettingsTitle></SettingsTitle>
+      <Lefticon></Lefticon>
     </View>
-
+  );
 }
 
 const styles = StyleSheet.create({
@@ -15,4 +19,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  icon: {
+    flex:1,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+
+  }
 });

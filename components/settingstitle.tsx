@@ -1,21 +1,25 @@
-import { FunctionComponent } from "react";
+import React from "react";
+import AntDesign from "@expo/vector-icons/build/AntDesign";
 import { Text, StyleSheet, View } from "react-native";
 
-const SettingsTitle: FunctionComponent = () => {
+export default function SettingsTitle () {
     return (
-    <View style = {styles.top}>
-        <Text style= {styles.text}>Settings</Text>
-    </View>
+        <View style ={styles.containter}>
+            <Text style= {styles.text}>Settings</Text>
+        </View>
+    
     )
 }
 const styles = StyleSheet.create({
-    top: {
-        padding: 20,
+    containter:{
+        flex: 1,
+        justifyContent: 'flex-start',
+        paddingTop: 0,
     },
     text: {
         fontSize: 20,
-        textAlign: "center",
+        alignItems: "center",
+        marginTop: 60
     }
 });
 
-export default SettingsTitle;
